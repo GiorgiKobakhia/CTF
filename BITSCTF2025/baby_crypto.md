@@ -10,7 +10,7 @@ Unfortunately, sending given *ct* to challenge does not work.
 ![image](https://github.com/user-attachments/assets/03b35197-5757-4438-b921-a0f71c346090)
 
 # Solution
-We can send $2^e \times ct = 2^e \times m^e = (2 \times m)^e$. It gives us back $((2 \times m)^e)^d = 2 \times m$. Then we just divide the answer by 2.
+We can send $2^e \times ct = 2^e \times m^e = (2 \times m)^e$. It gives us back $((2 \times m)^e)^d \equiv 2 \times m \pmod{n}$. Then we just divide the answer by 2.
 
 # Script
 ```python
